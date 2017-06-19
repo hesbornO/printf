@@ -23,22 +23,22 @@ Number | Description
 16     |  All above options should work well together.
 
 ## USES
-**String:** ```C
+**String:** ```
 	    _printf("%s\n", "This is a string.");
 	    ```
 **Output:** This is a string.
 
-**Character:** ```C
+**Character:** ```
 	       _printf("%c\n", "V");
 	       ```
 **Output:** V
 
-**Integer:** ```C
+**Integer:** ```
 	     _printf("%i\n", "10")
 	     ```
 **Output:** 10
 
-**Decimal:** ```C
+**Decimal:** ```
 	     _printf("%d\n", "1000")
 	     ```
 **Output:**  1000
