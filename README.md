@@ -20,25 +20,25 @@ _printf will produce output according to a format.
   * va_copy (man 3 va_copy)
   * va_arg (man 3 va_arg)
 ## Tasks
-Number | Description | Completed
+Number | Description | Completion Status
 ------ |  ---------- | ---------
-0      |  Write function that produces output with conversion specifiers c, s, and %. | - [x] 
-1      |  Handle conversion specifiers d, i. | - [x] 
-2      |  Create a man page for your function. | - [x] 
-3      |  Handle conversion specifier b. | - [x] 
-4      |  Handle conversion specifiers u, o, x, X. | - [x] 
-5      |  Use a local buffer of 1024 chars in order to call write as little as possible. | - [ ] 
-6      |  Handle conversion specifier S. | - [x] 
-7      |  Handle conversion specifier p. | - [x] 
-8      |  Handle flag characters +, space, and # for non-custom conversion specifiers. | - [ ] 
-9      |  Handle length modifiers l, h for non-custom conversion specifiers. | - [ ] 
-10     |  Handle the field width for non custom conversion specifiers. | - [ ] 
-11     |  Handle the precision for non-custom conversion specifiers. | - [ ] 
-12     |  Handle the 0 flag character for non-custom conversion specifiers. | - [ ] 
-13     |  Handle the - flag character for non-custom conversion specifiers. | - [ ] 
-14     |  Handle the custom conversion specifier r that prints the reversed string. | - [x] 
-15     |  Handle the custom conversion specifier R that prints the rot13'ed string. | - [x] 
-16     |  All above options should work well together. | - [ ] 
+0      |  Write function that produces output with conversion specifiers c, s, and %. | Completed (mandatory)
+1      |  Handle conversion specifiers d, i. | Completed (mandatory) 
+2      |  Create a man page for your function. | Completed (mandatory)
+3      |  Handle conversion specifier b. | Completed (mandatory)
+4      |  Handle conversion specifiers u, o, x, X. | Completed (advanced)
+5      |  Use a local buffer of 1024 chars in order to call write as little as possible. | Not Completed (advanced)
+6      |  Handle conversion specifier S. | Completed (advanced) 
+7      |  Handle conversion specifier p. | Completed (advanced)
+8      |  Handle flag characters +, space, and # for non-custom conversion specifiers. | Not Completed (advanced)
+9      |  Handle length modifiers l, h for non-custom conversion specifiers. | Not completed (advanced)
+10     |  Handle the field width for non custom conversion specifiers. | Not Completed (advanced)
+11     |  Handle the precision for non-custom conversion specifiers. | Not Completed (advanced)
+12     |  Handle the 0 flag character for non-custom conversion specifiers. | Not Completed (advanced)
+13     |  Handle the - flag character for non-custom conversion specifiers. | Not completed (advanced)
+14     |  Handle the custom conversion specifier r that prints the reversed string. | Completed (advanced)
+15     |  Handle the custom conversion specifier R that prints the rot13'ed string. | Completed (advanced)
+16     |  All above options should work well together. | Not Completed (advanced)
 ## File Descriptions
 * **_printf.c:** This file uses the prototype ```int _printf(const char *format, ...);``` and format is a character string. The format string is composed of zero or more directives. See ```man 3 printf``` for more detail. _printf will return the number of characters printed (excluding the ull byte used to end output to strings) and will write output to stdout, the standard output stream.
 * **_putchar.c:** This file uses the prototype ```_putchar(char c);```that  writes an unsigned char specified by the argument to stdout.
