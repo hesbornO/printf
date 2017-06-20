@@ -20,6 +20,8 @@ _printf will produce output according to a format.
   * va_copy (man 3 va_copy)
   * va_arg (man 3 va_arg)
 ## Tasks
+Mandatory
+---------
 Number | Description | Completion Status
 ------ |  ---------- | ---------
 0     |  Write function that produces output with conversion specifiers c, s, and %. | Completed
