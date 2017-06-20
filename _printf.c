@@ -74,8 +74,10 @@ int _printf(const char *format, ...)
 	va_list valist;
 	int (*f)(va_list);
 
+	if (format == NULL)
+		return (-1);
 	va_start(valist, format);
-	while (format && format[i])
+	while (format[i])
 	{
 		for (; format[i] != '%' && format[i]; i++)
 		{
