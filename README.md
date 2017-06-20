@@ -19,14 +19,15 @@ _printf will produce output according to a format.
   * va_end (man 3 va_end)
   * va_copy (man 3 va_copy)
   * va_arg (man 3 va_arg)
-## Tasks
-Mandatory
----------
+## Mandatory Tasks
 Number | Description | Completion Status
 ------ |  ---------- | ---------
 0     |  Write function that produces output with conversion specifiers c, s, and %. | Completed
 1     |  Handle conversion specifiers d, i. | Completed
 2     |  Create a man page for your function. | Completed
+## Advanced Tasks
+Number | Description | Completion Status
+------ |  ---------- | ---------
 3     |  Handle conversion specifier b. | Completed
 4     |  Handle conversion specifiers u, o, x, X. | Completed 
 5     |  Use a local buffer of 1024 chars in order to call write as little as possible. | Incomplete
