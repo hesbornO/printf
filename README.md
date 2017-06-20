@@ -1,18 +1,16 @@
 ## _printf
-_printf will produce output accrding to a format.
+_printf will produce output according to a format.
 **Prototype:** _printf(const char *, ...);
 ## Requirements
 * All files will be compled on Ubuntu 14.04 LTS
 * Programs and functions will be compiled with gcc 4.8.4 using flags -Wall -Werror -Wextra and -pedantic
 * All files should end in a new line
-* Code should use the Betty style
-* You are not allowed to use global variables
+* Code should use the [Betty](https://github.com/holbertonschool/Betty/wiki) style
+* Global variables are not allowed
 * No more than 5 functions per file
-* A README.md file, at the root of the project is mandatory
 * main.c are shown as examples and files can be used to test your functions
-* The prototypes of all your functions should be included in your header file called holberton.h
-* Don't forget to push your header file
-* All your header files should be include guarded
+* The prototypes of all functions should be included in the header file called holberton.h
+* All header files should be include guarded
 * Authorized functions and macros:
   * write (man 2 write)
   * malloc (man 3 malloc)
@@ -22,25 +20,25 @@ _printf will produce output accrding to a format.
   * va_copy (man 3 va_copy)
   * va_arg (man 3 va_arg)
 ## Tasks
-Number | Description
------- |  ----------
-0      |  Write function that produces output with conversion specifiers c, s, and %.
-1      |  Handle conversion specifiers d, i.
-2      |  Create a man page for your function.
-3      |  Handle conversion specifier b.
-4      |  Handle conversion specifiers u, o, x, X.
-5      |  Use a local buffer of 1024 chars in order to call write as little as possible.
-6      |  Handle conversion specifier S.
-7      |  Handle conversion specifier p.
-8      |  Handle flag characters +, space, and # for non-custom conversion specifiers.
-9      |  Handle length modifiers l, h for non-custom conversion specifiers.
-10     |  Handle the field width for non custom conversion specifiers.
-11     |  Handle the precision for non-custom conversion specifiers.
-12     |  Handle the 0 flag character for non-custom conversion specifiers.
-13     |  Handle the - flag character for non-custom conversion specifiers.
-14     |  Handle the custom conversion specifier r that prints the reversed string.
-15     |  Handle the custom conversion specifier R that prints the rot13'ed string.
-16     |  All above options should work well together.
+Number | Description | Completed
+------ |  ---------- | ---------
+0      |  Write function that produces output with conversion specifiers c, s, and %. | - [x]
+1      |  Handle conversion specifiers d, i. | - [x]
+2      |  Create a man page for your function. | - [x]
+3      |  Handle conversion specifier b. | -[x]
+4      |  Handle conversion specifiers u, o, x, X. | - [x]
+5      |  Use a local buffer of 1024 chars in order to call write as little as possible. | - [ ]
+6      |  Handle conversion specifier S. | - [x]
+7      |  Handle conversion specifier p. | - [x]
+8      |  Handle flag characters +, space, and # for non-custom conversion specifiers. | - [ ]
+9      |  Handle length modifiers l, h for non-custom conversion specifiers. | - [ ]
+10     |  Handle the field width for non custom conversion specifiers. | - [ ]
+11     |  Handle the precision for non-custom conversion specifiers. | - [ ]
+12     |  Handle the 0 flag character for non-custom conversion specifiers. | - [ ]
+13     |  Handle the - flag character for non-custom conversion specifiers. | - [ ]
+14     |  Handle the custom conversion specifier r that prints the reversed string. | - [x]
+15     |  Handle the custom conversion specifier R that prints the rot13'ed string. | - [x]
+16     |  All above options should work well together. | - [ ]
 ## File Descriptions
 * **_printf.c:** This file uses the prototype ```int _printf(const char *format, ...);``` and format is a character string. The format string is composed of zero or more directives. See ```man 3 printf``` for more detail. _printf will return the number of characters printed (excluding the ull byte used to end output to strings) and will write output to stdout, the standard output stream.
 * **_putchar.c:** This file uses the prototype ```_putchar(char c);```that  writes an unsigned char specified by the argument to stdout.
