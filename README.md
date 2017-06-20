@@ -73,4 +73,5 @@ Number | Description | Completion Status
 **Output:**  1000
 ## Authors
 Alexa Orrico [GitHub](https://github.com/alexaorrico) [Twitter](https://twitter.com/alexa_orrico)
+
 Daniel Ojeda [GitHub](https://github.com/Danielo814) [Twitter](https://twitter.com/DanielC_Ojeda)
