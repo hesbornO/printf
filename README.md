@@ -3,6 +3,26 @@ _printf will produce output according to a format.
 **Prototype:** int _printf(const char *, ...);
 ## Description
 This is a custom implementation of ```printf```. This project is an application of the C programming knowledge that Holberton batch 3 students have learned since starting the program on May 1, 2017.
+## Examples
+**String:** ```
+	    _printf("%s\n", 'This is a string.');
+	    ```
+**Output:** This is a string.
+
+**Character:** ```
+	       _printf("%c\n", 'V');
+	       ```
+**Output:** V
+
+**Integer:** ```
+	     _printf("%i\n", 10);
+	     ```
+**Output:** 10
+
+**Decimal:** ```
+	     _printf("%d\n", 1000);
+	     ```
+**Output:**  1000
 ## Requirements
 * All files will be compled on Ubuntu 14.04 LTS
 * Programs and functions will be compiled with gcc 4.8.4 using flags -Wall -Werror -Wextra and -pedantic
@@ -53,26 +73,6 @@ Number | Description | Completion Status
 * **print_numbers.c:** This file contains the function prototypes ```int print_i(va_list i);``` and ```int print_d(va_list d);``` these functions handle the conversion specifiers ```d``` and ```i``` which convert an int argument to a signed decimal notation.
 * **print_hex.c:** Function prototype ```int print_hex(unsigned int n, unsigned int c);``` prints an unsigned int in hexidecimal form and will return the number of digits printed. This function is used as a helper to functions ```int print_x(va_list x)``` and ```int print_X(va_list X)``` which handle conversion specifiers ```x``` and ```X``` which take an unsigned int and print it in lowercase or uppercase hex notation. One more function prototype ```int print_p(va_list p);``` is included in this file and it handles conversion specifier ```p``` that prints an address.
 * **print_unsigned_int.c:** this file uses function prototypes ```int print_u(va_list u);``` to handle conversion specifier ```u``` to print an unsigned int in decimal notation, ```int print_0(va_list o)``` to handle conversion specifier ```o``` to take an unsigned int and print it in octal notation, and ```int print_b(va_list b)``` to handle conversion specifier ```b``` that takes an unsigned int and prints it in binary notation.
-## Examples
-**String:** ```
-	    _printf("%s\n", 'This is a string.');
-	    ```
-**Output:** This is a string.
-
-**Character:** ```
-	       _printf("%c\n", 'V');
-	       ```
-**Output:** V
-
-**Integer:** ```
-	     _printf("%i\n", 10);
-	     ```
-**Output:** 10
-
-**Decimal:** ```
-	     _printf("%d\n", 1000);
-	     ```
-**Output:**  1000
 ## Authors
 Alexa Orrico | [GitHub](https://github.com/alexaorrico) | [Twitter](https://twitter.com/alexa_orrico)
 
