@@ -97,12 +97,6 @@ int _printf(const char *format, ...)
 			;
 		if (!format[i + j])
 			return (-1);
-		if (format[i + j] == 's')
-		{
-			count += print_s(valist);
-			i += j + 1;
-			continue;
-		}
 		_putchar(format[i]);
 		count++;
 		if (j > 1 && format[i + j] != '%')
