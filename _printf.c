@@ -42,7 +42,7 @@ static int (*check_for_specifiers(const char *format))(va_list)
  */
 int _printf(const char *format, ...)
 {
-	unsigned int i = 0, count = 0;
+	unsigned int i = 0, j, count = 0;
 	va_list valist;
 	int (*f)(va_list);
 
@@ -64,12 +64,19 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			_putchar(format[i]);
-			count++;
-			if (format[i + 1] == '%')
-				i += 2;
+			for (j = 1; format[i + j] == ' '; j++)
+				;
+			if (format[i + j])
+			{
+				_putchar(format[i]);
+				count++;
+			}
 			else
-				i++;
+				return (count);
+			if (format[i + j] == '%')
+				i += j + 1;
+			else
+				i += j;
 		}
 	}
 	va_end(valist);
