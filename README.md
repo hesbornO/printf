@@ -43,11 +43,11 @@ Number | Description | Completion Status
 15    |  Handle the custom conversion specifier R that prints the rot13'ed string. | Completed
 16    |  All above options should work well together. | Incomplete
 ## File Descriptions
-* **_printf.c:** This file uses the prototype ```int _printf(const char *format, ...);``` and format is a character string. The format string is composed of zero or more directives. See ```man 3 printf``` for more detail. _printf will return the number of characters printed (excluding the ull byte used to end output to strings) and will write output to stdout, the standard output stream.
-* **_putchar.c:** This file uses the prototype ```_putchar(char c);```that  writes an unsigned char specified by the argument to stdout.
-* **holberton.h:** This file contains all function prototypes used throughout this assignent.
+* **_printf.c:** This file uses the prototype ```int _printf(const char *format, ...);``` and format is a character string. The format string is composed of zero or more directives. See ```man 3 printf``` for more detail. _printf will return the number of characters printed (excluding the null byte used to end output to strings) and will write output to stdout, the standard output stream.
+* **_putchar.c:** This file uses the prototype ```int _putchar(char c);```that  writes a char specified by the argument to stdout.
+* **holberton.h:** This file contains all function prototypes used throughout this assignment.
 * **man_3_printf:** This is the man page for our custom _printf function.
-* **print_chars.c:** This file uses function prototype ```int print_c(va_list c)``` to handle the conversion specifier ```c``` which converts the int argument to an unsigned char, and the resulting character is written. Function prototype ```int print_s(va_list s);``` is also used in this file to handle the conversion specifier ```s``` which expects the ```const char *``` argument to be a pointer to an array of character type (pointer to a string).
+* **print_chars.c:** This file uses function prototype ```int print_c(va_list c);``` to handle the conversion specifier ```c``` which converts the int argument to a char, and the resulting character is written. Function prototype ```int print_s(va_list s);``` is also used in this file to handle the conversion specifier ```s``` which expects the ```char *``` argument to be a pointer to an array of character type (pointer to a string) and prints the string.
 * **print_numbers.c:** This file contains the function prototypes ```int print_i(va_list i);``` and ```int print_d(va_list d);``` these functions handle the conversion specifiers ```d``` and ```i``` which convert an int argument to a signed decimal notation.
 * **print_hex.c:** Function prototype ```int print_hex(unsigned int n, unsigned int c);``` prints an unsigned int in hexidecimal form and will return the number of digits printed. This function is used as a helper to functions ```int print_x(va_list x)``` and ```int print_X(va_list X)``` which handle conversion specifiers ```x``` and ```X``` which take an unsigned int and print it in lowercase or uppercase hex notation. One more function prototype ```int print_p(va_list p);``` is included in this file and it handles conversion specifier ```p``` that prints an address.
 * **print_unsigned_int.c:** this file uses function prototypes ```int print_u(va_list u);``` to handle conversion specifier ```u``` to print an unsigned int in decimal notation, ```int print_0(va_list o)``` to handle conversion specifier ```o``` to take an unsigned int and print it in octal notation, and ```int print_b(va_list b)``` to handle conversion specifier ```b``` that takes an unsigned int and prints it in binary notation.
@@ -71,3 +71,6 @@ Number | Description | Completion Status
 	     _printf("%d\n", 1000);
 	     ```
 **Output:**  1000
+## Authors
+Alexa Orrico [GitHub](https://github.com/alexaorrico) [Twitter](https://twitter.com/alexa_orrico)
+Daniel Ojeda [GitHub](https://github.com/Danielo814) [Twitter](https://twitter.com/DanielC_Ojeda)
