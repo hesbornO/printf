@@ -44,7 +44,7 @@
 - [x] Handle conversion specifier ```p```.
 - [ ] Handle flag characters ```+```, space, and ```#``` for non-custom conversion specifiers.
 - [ ] Handle length modifiers ```l``` and ```h``` for non-custom conversion specifiers.
-- [ ] Handle the field width for non custom conversion specifiers.
+- [ ] Handle the field width for non-custom conversion specifiers.
 - [ ] Handle the precision for non-custom conversion specifiers.
 - [ ] Handle the ```0``` flag character for non-custom conversion specifiers.
 - [x] Handle the custom conversion specifier ```r``` that prints the reversed string.
@@ -55,7 +55,7 @@
 * **_putchar.c:** - contains the function ```_putchar```, which writes a character to stdout.
 * **holberton.h:** - contains all function prototypes used for ```_printf```.
 * **man_3_printf:** - manual page for the custom ```_printf``` function.
-* **print_chars.c:** - contains the functions ```print_c```, ```print_s```, ```print_S```, and ```print_r`` which handle the conversion specifiers ```c```, ```s```, ```S```, and ```r```, respectively, as well as ```hex_print```, which prints a char's ascii value in uppercase hex
+* **print_chars.c:** - contains the functions ```print_c```, ```print_s```, ```print_S```, and ```print_r``` which handle the conversion specifiers ```c```, ```s```, ```S```, and ```r```, respectively, as well as ```hex_print```, which prints a char's ascii value in uppercase hex
 * **print_numbers.c:** - contains the functions ```print_i``` and ```print_d```, which handle the conversion specifiers ```i``` and ```d```, respectively
 * **print_hex.c:** - contains the functions ```print_hex```, which prints an unsigned int in hexidecimal form, ```print_x```, ```print_X```, and ```print_p```, which handle the conversion specifiers ```x```, ```X```, and ```p```, respectively
 * **print_unsigned_int.c:** - contains the functions ```print_u```, ```print_o```, and ```print_b```, which handle the conversion specifiers ```u```, ```o```, and ```b```, respectively
