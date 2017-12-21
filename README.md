@@ -1,38 +1,30 @@
-## _printf
-_printf will produce output according to a format.
-**Prototype:** int _printf(const char *, ...);
+# _printf
 ## Description
-This is a custom implementation of ```printf```. This project is an application of the C programming knowledge that Holberton batch 3 students have learned since starting the program on May 1, 2017.
+**_printf** is a custom implementation of the C programming function ```printf```. This project is an application of the C programming knowledge that Holberton School cohort 3 students have learned since starting the program on May 1, 2017.
+
+**Prototype:** int _printf(const char *, ...);
+
 ## Examples
-**String:** ```
-	    _printf("%s\n", 'This is a string.');
-	    ```
-**Output:** This is a string.
+**String**
+* Input: ```_printf("%s\n", 'This is a string.');```
+* Output: This is a string.
 
-**Character:** ```
-	       _printf("%c\n", 'V');
-	       ```
-**Output:** V
+**Character**
+* Input: ```_printf("The first letter in the alphabet is %c\n", 'A');```
+* Output: The first letter in the alphabet is A
 
-**Integer:** ```
-	     _printf("%i\n", 10);
-	     ```
-**Output:** 10
+**Integer**
+* Input: ```_printf("There are %i dozens in a gross\n", 12);```
+* Output: There are 12 dozens in a gross
 
-**Decimal:** ```
-	     _printf("%d\n", 1000);
-	     ```
-**Output:**  1000
-## Requirements
-* All files will be compled on Ubuntu 14.04 LTS
+**Decimal:**
+* Input: ```_printf("%d\n", 1000);```
+* Output:  1000
+## Project Requirements
+* All files will be compiled on Ubuntu 14.04 LTS
 * Programs and functions will be compiled with gcc 4.8.4 using flags -Wall -Werror -Wextra and -pedantic
-* All files should end in a new line
 * Code should use the [Betty](https://github.com/holbertonschool/Betty/wiki) style
 * Global variables are not allowed
-* No more than 5 functions per file
-* main.c are shown as examples and files can be used to test your functions
-* The prototypes of all functions should be included in the header file called holberton.h
-* All header files should be include guarded
 * Authorized functions and macros:
   * write (man 2 write)
   * malloc (man 3 malloc)
@@ -42,38 +34,32 @@ This is a custom implementation of ```printf```. This project is an application 
   * va_copy (man 3 va_copy)
   * va_arg (man 3 va_arg)
 ## Mandatory Tasks
-Number | Description | Completion Status
------- |  ---------- | ---------
-0     |  Write function that produces output with conversion specifiers c, s, and %. | Completed
-1     |  Handle conversion specifiers d, i. | Completed
-2     |  Create a man page for your function. | Completed
+- [x] Write function that produces output with conversion specifiers c, s, and %.
+- [x] Handle conversion specifiers d, i.
+- [x] Create a man page for your function.
 ## Advanced Tasks
-Number | Description | Completion Status
------- |  ---------- | ---------
-3     |  Handle conversion specifier b. | Completed
-4     |  Handle conversion specifiers u, o, x, X. | Completed 
-5     |  Use a local buffer of 1024 chars in order to call write as little as possible. | Incomplete
-6     |  Handle conversion specifier S. | Completed 
-7     |  Handle conversion specifier p. | Completed 
-8     |  Handle flag characters +, space, and # for non-custom conversion specifiers. | Incomplete
-9     |  Handle length modifiers l, h for non-custom conversion specifiers. | Incomplete
-10    |  Handle the field width for non custom conversion specifiers. | Incomplete
-11    |  Handle the precision for non-custom conversion specifiers. | Incomplete
-12    |  Handle the 0 flag character for non-custom conversion specifiers. | Incomplete
-13    |  Handle the - flag character for non-custom conversion specifiers. | Incomplete
-14    |  Handle the custom conversion specifier r that prints the reversed string. | Completed
-15    |  Handle the custom conversion specifier R that prints the rot13'ed string. | Completed
-16    |  All above options should work well together. | Incomplete
+- [x] Handle conversion specifier b.
+- [x] Handle conversion specifiers u, o, x, X.
+- [ ] Use a local buffer of 1024 chars in order to call write as little as possible.
+- [x] Handle conversion specifier S.
+- [x] Handle conversion specifier p.
+- [ ] Handle flag characters +, space, and # for non-custom conversion specifiers.
+- [ ] Handle length modifiers l, h for non-custom conversion specifiers.
+- [ ] Handle the field width for non custom conversion specifiers.
+- [ ] Handle the precision for non-custom conversion specifiers.
+- [ ] Handle the 0 flag character for non-custom conversion specifiers.
+- [x] Handle the custom conversion specifier r that prints the reversed string.
+- [x] Handle the custom conversion specifier R that prints the rot13'ed string.
+- [ ] All above options should work well together.
 ## File Descriptions
-* **_printf.c:** This file uses the prototype ```int _printf(const char *format, ...);``` and format is a character string. The format string is composed of zero or more directives. See ```man 3 printf``` for more detail. _printf will return the number of characters printed (excluding the null byte used to end output to strings) and will write output to stdout, the standard output stream.
-* **_putchar.c:** This file uses the prototype ```int _putchar(char c);```that  writes a char specified by the argument to stdout.
-* **holberton.h:** This file contains all function prototypes used throughout this assignment.
-* **man_3_printf:** This is the man page for our custom _printf function.
-* **print_chars.c:** This file uses function prototype ```int print_c(va_list c);``` to handle the conversion specifier ```c``` which converts the int argument to a char, and the resulting character is written. Function prototype ```int print_s(va_list s);``` is also used in this file to handle the conversion specifier ```s``` which expects the ```char *``` argument to be a pointer to an array of character type (pointer to a string) and prints the string.
-* **print_numbers.c:** This file contains the function prototypes ```int print_i(va_list i);``` and ```int print_d(va_list d);``` these functions handle the conversion specifiers ```d``` and ```i``` which convert an int argument to a signed decimal notation.
-* **print_hex.c:** Function prototype ```int print_hex(unsigned int n, unsigned int c);``` prints an unsigned int in hexidecimal form and will return the number of digits printed. This function is used as a helper to functions ```int print_x(va_list x)``` and ```int print_X(va_list X)``` which handle conversion specifiers ```x``` and ```X``` which take an unsigned int and print it in lowercase or uppercase hex notation. One more function prototype ```int print_p(va_list p);``` is included in this file and it handles conversion specifier ```p``` that prints an address.
-* **print_unsigned_int.c:** this file uses function prototypes ```int print_u(va_list u);``` to handle conversion specifier ```u``` to print an unsigned int in decimal notation, ```int print_0(va_list o)``` to handle conversion specifier ```o``` to take an unsigned int and print it in octal notation, and ```int print_b(va_list b)``` to handle conversion specifier ```b``` that takes an unsigned int and prints it in binary notation.
+* **_printf.c:** - contains the  fucntion **_printf**, which uses the prototype ```int _printf(const char *format, ...);```. The format string is composed of zero or more directives. See ```man 3 printf``` for more detail. **_printf** will return the number of characters printed (excluding the null byte used to end output to strings) and will write output to **stdout**, the standard output stream.
+* **_putchar.c:** - contains the function **_putchar**, which writes a character to stdout.
+* **holberton.h:** - contains all function prototypes used for **_printf**.
+* **man_3_printf:** - manual page for the custom **_printf** function.
+* **print_chars.c:** - contains the functions **print_c** and **print_s**, which handle the conversion specifiers ```c``` and ```s```, respectively
+* **print_numbers.c:** - contains the functions **print_i** and **print_d**, which handle the conversion specifiers ```i``` and ```d```, respectively
+* **print_hex.c:** - contains the functions **print_hex**, which prints an unsigned int in hexidecimal form, **print_x**, **print_X**, and **print_p**, which handle the conversion specifiers ```x```, ```X```, and ```p```, respectively
+* **print_unsigned_int.c:** - contains the functions **print_u**, **print_o**, and **print_b**, which handle the conversion specifiers ```u```, ```o```, and ```b```, respectively
 ## Authors
-Alexa Orrico | [GitHub](https://github.com/alexaorrico) | [Twitter](https://twitter.com/alexa_orrico)
-
-Daniel Ojeda | [GitHub](https://github.com/Danielo814) | [Twitter](https://twitter.com/DanielC_Ojeda)
+[Alexa Orrico](https://github.com/alexaorrico) | [@alexa_orrico](https://twitter.com/alexa_orrico)
+[Daniel Ojeda](https://github.com/Danielo814) | [@DanielC_Ojeda](https://twitter.com/DanielC_Ojeda)
