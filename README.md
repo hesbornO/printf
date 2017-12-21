@@ -1,29 +1,29 @@
 # _printf
 ## Description
-**_printf** is a custom implementation of the C programming function ```printf```. This project is an application of the C programming knowledge that Holberton School cohort 3 students have learned since starting the program on May 1, 2017.
+```_printf``` is a custom implementation of the C programming function ```printf```. This project is an application of the C programming knowledge that [Holberton School](https://www.holbertonschool.com/) cohort 3 students have learned since starting the program on May 1, 2017.
 
 **Prototype:** int _printf(const char *, ...);
 
 ## Examples
 **String**
 * Input: ```_printf("%s\n", 'This is a string.');```
-* Output: This is a string.
+* Output: ```This is a string.```
 
 **Character**
 * Input: ```_printf("The first letter in the alphabet is %c\n", 'A');```
-* Output: The first letter in the alphabet is A
+* Output: ```The first letter in the alphabet is A```
 
 **Integer**
 * Input: ```_printf("There are %i dozens in a gross\n", 12);```
-* Output: There are 12 dozens in a gross
+* Output: ```There are 12 dozens in a gross```
 
 **Decimal:**
 * Input: ```_printf("%d\n", 1000);```
-* Output:  1000
+* Output:  ```1000```
 ## Project Requirements
 * All files will be compiled on Ubuntu 14.04 LTS
 * Programs and functions will be compiled with gcc 4.8.4 using flags -Wall -Werror -Wextra and -pedantic
-* Code should use the [Betty](https://github.com/holbertonschool/Betty/wiki) style
+* Code must follow the [Betty](https://github.com/holbertonschool/Betty/wiki) style
 * Global variables are not allowed
 * Authorized functions and macros:
   * write (man 2 write)
@@ -52,14 +52,15 @@
 - [x] Handle the custom conversion specifier R that prints the rot13'ed string.
 - [ ] All above options should work well together.
 ## File Descriptions
-* **_printf.c:** - contains the  fucntion **_printf**, which uses the prototype ```int _printf(const char *format, ...);```. The format string is composed of zero or more directives. See ```man 3 printf``` for more detail. **_printf** will return the number of characters printed (excluding the null byte used to end output to strings) and will write output to **stdout**, the standard output stream.
-* **_putchar.c:** - contains the function **_putchar**, which writes a character to stdout.
-* **holberton.h:** - contains all function prototypes used for **_printf**.
-* **man_3_printf:** - manual page for the custom **_printf** function.
-* **print_chars.c:** - contains the functions **print_c** and **print_s**, which handle the conversion specifiers ```c``` and ```s```, respectively
-* **print_numbers.c:** - contains the functions **print_i** and **print_d**, which handle the conversion specifiers ```i``` and ```d```, respectively
-* **print_hex.c:** - contains the functions **print_hex**, which prints an unsigned int in hexidecimal form, **print_x**, **print_X**, and **print_p**, which handle the conversion specifiers ```x```, ```X```, and ```p```, respectively
-* **print_unsigned_int.c:** - contains the functions **print_u**, **print_o**, and **print_b**, which handle the conversion specifiers ```u```, ```o```, and ```b```, respectively
+* **_printf.c:** - contains the  fucntion ```_printf```, which uses the prototype ```int _printf(const char *format, ...);```. The format string is composed of zero or more directives. See ```man 3 printf``` for more detail. **_printf** will return the number of characters printed (excluding the null byte used to end output to strings) and will write output to **stdout**, the standard output stream.
+* **_putchar.c:** - contains the function ```_putchar```, which writes a character to stdout.
+* **holberton.h:** - contains all function prototypes used for ```_printf```.
+* **man_3_printf:** - manual page for the custom ```_printf``` function.
+* **print_chars.c:** - contains the functions ```print_c``` and ```print_s```, which handle the conversion specifiers ```c``` and ```s```, respectively
+* **print_numbers.c:** - contains the functions ```print_i``` and ```print_d```, which handle the conversion specifiers ```i``` and ```d```, respectively
+* **print_hex.c:** - contains the functions ```print_hex```, which prints an unsigned int in hexidecimal form, ```print_x```, ```print_X```, and ```print_p```, which handle the conversion specifiers ```x```, ```X```, and ```p```, respectively
+* **print_unsigned_int.c:** - contains the functions ```print_u```, ```print_o```, and ```print_b```, which handle the conversion specifiers ```u```, ```o```, and ```b```, respectively
 ## Authors
 [Alexa Orrico](https://github.com/alexaorrico) | [@alexa_orrico](https://twitter.com/alexa_orrico)
+
 [Daniel Ojeda](https://github.com/Danielo814) | [@DanielC_Ojeda](https://twitter.com/DanielC_Ojeda)
